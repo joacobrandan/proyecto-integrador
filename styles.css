@@ -1,0 +1,100 @@
+#body{
+  background-image: url(./imgs/canciones/body.jpg);
+  
+
+}
+
+.contenedorli{
+    display: flex;
+    flex-direction: row;
+    margin-left: -50px;
+    background-color: rgba(255, 255, 255, 0.062);
+    margin-bottom: 20px;
+    
+}
+
+.lista{
+
+    list-style: none;
+    width: 250px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.322);
+    margin-left: 50px;
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.imgmusica{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    padding: 0,5px;
+    margin-bottom: 19px;
+    border-style: solid;
+    
+}
+
+.titulocancion{
+    text-align: center;
+    font-weight:bolder ;
+    text-decoration: none;
+    color: black;
+}
+.encabezado{
+
+    background-color: black;
+    color: white;
+    width: 120px;
+    border-radius: 50px;
+    height: 38px;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedornav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    border-style: solid;
+    width: 1450px;
+    background-color: rgba(0, 0, 0, 0.455);
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 30px;
+    
+
+}
+.listanav{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.619);
+    align-self: center;
+    width: 180px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headdeco{
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+}
