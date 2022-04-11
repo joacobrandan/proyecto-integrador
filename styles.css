@@ -29,6 +29,11 @@
     
     
 }
+.artista{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
 .imgmusica{
     
     width: 200px;
@@ -98,4 +103,33 @@
     font-weight: bold;
     color: black;
     margin-top: 30px;
+}
+
+#bot{
+    background-color: silver;
+    height: 100px;
+    border-radius: 100px 100px 0px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 40px;
+    
+    
+
+}
+.contenedorfoot{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+.nombresfoot{
+    list-style: none;
+    width: 250px;
+    height: 35px;
+    align-self: center;
+}
+.contacto{
+    text-decoration: none;
+    color: rgb(23, 22, 22);
 }
