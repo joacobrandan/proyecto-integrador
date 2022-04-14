@@ -12,6 +12,9 @@
     margin-bottom: 20px;
     
 }
+.buscador{
+    margin-bottom: 30px;
+}
 
 .lista{
 
@@ -166,7 +169,7 @@
     color:black;
     background-color: rgba(255, 255, 255, 0.729);
     text-align: center;
-    width: 100%;
+    width: 99%;
     text-decoration: none;
     padding: 10px;
 }
@@ -175,20 +178,47 @@
     border-radius: 30px;
     width: 300px;
 }
-.ulres{
+.track-res{
    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row; 
     background-color: rgba(255, 255, 255, 0.116);
     height: 350px;
-    list-style: none;
-      
-
+    
+    
 }
 .subtitulos{
     text-decoration: none;
-}
-.fondo-li-res{
+    text-align: center;
+    color: rgba(245, 245, 245, 0.688);
+    font-size: 40px;
    
 }
+.fondo-li-res{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 200px;
+    justify-content: center;
+}
+.ul-res{
+    list-style: none;
+}
+.iconos{
+    display: flex;
+    list-style: none;
+    background-color: white;
+    width: 60px;
+    justify-content: center;
+    border-radius: 40px;
+    margin-left: 40px;
+    
+}
+.space{
+    margin-right: 30px;
+    margin-left: -30px;
+}
+
+
