@@ -216,6 +216,7 @@
     text-align: center;
     
     
+    
 }
 .spotify{
     background-color: #52525241;
@@ -234,4 +235,16 @@
     font-family: 'Rubik', sans-serif;
     margin-right: 1em;
     text-decoration: none;outline: none;
+    
 }
+
+
+  
+  .image{
+    display: grid;
+    width: 50%;
+    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
