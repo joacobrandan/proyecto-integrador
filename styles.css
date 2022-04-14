@@ -238,13 +238,41 @@
     
 }
 
-
+.titulog{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
   
   .image{
-    display: grid;
+   
     width: 50%;
     height: 50%;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  
+    }
+
+.rock{
+    background-color: rgba(0, 0, 0, 0.881);
+    color:white;
+    max-width: 20%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.hiphop{
+    background-color:  rgba(0, 0, 0, 0.881);
+    color: white;
+    max-width: 20%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.electronica{
+    background-color: rgba(0, 0, 0, 0.881) ;
+    color: white;
+    max-width: 20%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.nombregenero{
+    margin: 10px auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
