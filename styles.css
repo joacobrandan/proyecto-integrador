@@ -279,7 +279,6 @@
    
     width: 50%;
     height: 50%;
-<<<<<<< HEAD
     }
 
 .rock{
@@ -309,9 +308,3 @@
     margin-left: auto;
     margin-right: auto;
 }
-=======
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  
->>>>>>> 940cfee0a6d637181cad658d3fecf8804624051d
