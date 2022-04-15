@@ -270,10 +270,21 @@
     
 }
 
-.titulog{
+#artistas-text {
+    font-size: 30px;
+    font-family:'Rubik', sans-serif ;
+    font-style: italic;
     text-align: center;
+    padding: 10px;
+  }
+  
+  .artistas-text2 {
+    font-size: 20px;
     font-family: 'Rubik', sans-serif;
-}
+    font-style: bold;
+    text-align: center;
+    padding: 10px;
+  }
   
   .image{
    
@@ -287,6 +298,8 @@
     max-width: 20%;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-style: italic;
 }
 .hiphop{
     background-color:  rgba(0, 0, 0, 0.881);
@@ -294,6 +307,8 @@
     max-width: 20%;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-style: italic;
 }
 .electronica{
     background-color: rgba(0, 0, 0, 0.881) ;
@@ -301,10 +316,67 @@
     max-width: 20%;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+font-style: italic;
 }
 .nombregenero{
     margin: 10px auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.Daddy{
+    background-color: #52525241;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.116);
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 0.8fr 3.7fr 0.5fr;
+ align-items: center;
+}
+.imgcan1{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 4px;
+    width: 130px;
+    text-align: right;
+    max-height: 120px;
+}
+.abcd{
+    grid-template-rows: 1f 1f;
+    font-family: 'Rubik', sans-serif;
+    margin-right: 1em;
+    text-decoration: none;outline: none;
+    font-size: larger;
+    color: rgba(245, 245, 245, 0.688);
+    font-style: bold;
+}
+.r{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: black;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.rr{
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.rrr{
+    font-family: 'Rubik', sans-serif;
+    font-style: bold;
+    font-size: 22px;
+  
+}
+.talvez{
+    text-align: center;
+    font-style: bold;
+    font-family: 'Rubik', sans-serif;
+}
+.homerunimg{
+  width: 500px;
+    text-align: center;
+    max-height: 600px;
 }
