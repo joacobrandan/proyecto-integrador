@@ -301,6 +301,7 @@
     font-size: 20px;
     font-style: italic;
     bottom: -1000px;
+    vertical-align: middle;
 }
 .hiphop{
     background-color:  rgba(0, 0, 0, 0.881);
@@ -377,14 +378,64 @@ font-style: italic;
   width: 500px;
     text-align: center;
     max-height: 600px;
-position: relative;top: 10px;left: 1000px;
+position: relative;top: 10px;left: 980px;
 }
 .talvez{
-    color:black;
-    background-color: rgba(255, 255, 255, 0.729);
+    color:rgb(195, 97, 67);
+    background-color: rgba(201, 199, 199, 0.729);
     text-align: center;
     width: 99%;
     text-decoration: none;
     padding: 10px;
     font-family: 'Rubik', sans-serif;
+}
+.titulo{
+    color:rgb(195, 97, 67);
+    background-color: rgba(201, 199, 199, 0.729);
+    width: 40%;
+    text-align: center;
+
+    font-family: 'Rubik', sans-serif;
+}
+.agregar{
+    text-decoration: none;
+   font-style: bold;
+    color: black;
+font-family: 'Rubik', sans-serif;
+position: relative;left: 1000px;
+}
+.albump{
+position: relative;left: 1000px;
+color: rgb(231, 217, 217);
+bottom: 500px;
+
+}
+.albumti{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #52525241;
+  
+}
+.albumti1{
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    bottom: 10px;
+}
+.pl{
+    width: 500px;
+    height: 500px;
+    position: relative;left: 500px;
+}
+.pl1{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #efe7e741;
+}
+.pl2{
+  position: relative;left: 10px;
+}
+.pl3{
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    color: white;
 }
