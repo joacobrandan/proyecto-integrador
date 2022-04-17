@@ -4,6 +4,16 @@
 
 }
 
+.team{
+    width: 150px;
+    border-radius: 70px;
+    align-self: center;
+    padding: 10px;
+    
+}
+
+
+
 .contenedorli{
     display: flex;
     flex-direction: row;
@@ -12,8 +22,19 @@
     margin-bottom: 20px;
     
 }
+
+.barra{
+    text-align: right;
+    align-self: center;
+    padding: 10px;
+        
+    
+}
 .buscador{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .lista{
@@ -439,3 +460,5 @@ bottom: 500px;
     font-style: italic;
     color: white;
 }
+
+/* telefono */
