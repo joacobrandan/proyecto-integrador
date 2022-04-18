@@ -700,8 +700,8 @@ bottom: 500px;
           
           justify-content: center;
       }
-      .ul-res{
-          list-style: none;
+      .-res{
+          width: 87%;
           
       }
       .simbolos{
