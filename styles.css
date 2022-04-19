@@ -405,12 +405,7 @@ flex-wrap: wrap;
   
 }
 
-.homerunimg{
-  width: 500px;
-    text-align: center;
-    max-height: 600px;
-position: relative;top: 10px;left: 980px;
-}
+
 .talvez{
     color:rgb(195, 97, 67);
     background-color: rgba(201, 199, 199, 0.729);
@@ -457,6 +452,7 @@ bottom: 500px;
 }
 .pl2{
  width: 700px;
+ font-size: 20px;
 }
 .pl3{
     font-family: 'Rubik', sans-serif;
@@ -736,26 +732,20 @@ bottom: 500px;
       
       
          /*/Query de playlist/*/
-      
-     
       .imgcan{
           margin: 2px;
           padding: 2px;
           border-radius: 4px;
-          width: 150px;
+          width: 100px;
           text-align: right;
-      }
-      .iconos{
-          font-size: 75px;
-      }
-      .iconos1{
-          font-size: 65px;
-      }
-      .t2{
-          font-family: 'Rubik', sans-serif;
-          color: white;
-          text-align: center;
-          }
+            }
+        .iconos{
+          font-size: 50px;
+              }
+        .iconos1{
+          font-size: 55px;
+            }
+      
       .spotify{
         margin: 10px;
         display: flex;
@@ -775,7 +765,7 @@ bottom: 500px;
         margin-bottom: 15px;
           
       }
-      
+       /*/Query de genero/*/
       #generos-text {
           font-size: 30px;
           font-family:'Rubik', sans-serif ;
@@ -834,6 +824,7 @@ bottom: 500px;
           margin-left: auto;
           margin-right: auto;
           }
+           /*/Query de Genero Detail/*/
       .Daddy{
           background-color: #52525241;
           border-radius: 10px;
@@ -879,13 +870,8 @@ bottom: 500px;
           font-size: 22px;
         
       }
+       /*/Query de detail.track/*/
       
-      .homerunimg{
-        width: 500px;
-          text-align: center;
-          max-height: 600px;
-      position: relative;top: 10px;left: 980px;
-      }
       .talvez{
           color:rgb(195, 97, 67);
           background-color: rgba(201, 199, 199, 0.729);
@@ -903,13 +889,7 @@ bottom: 500px;
       
           font-family: 'Rubik', sans-serif;
       }
-      .agregar{
-          text-decoration: none;
-         font-style: bold;
-          color: black;
-      font-family: 'Rubik', sans-serif;
-      position: relative;left: 1000px;
-      }
+      /*/Query de detail.album*/
       .albump{
       position: relative;left: 1000px;
       color: rgb(231, 217, 217);
@@ -931,7 +911,8 @@ bottom: 500px;
           width: 500px;
           height: 500px;
           position: relative;left: 500px;
-      }
+      } 
+      /*/Query de detail.artist/*/
       .pl1{
           text-align: center;
           font-family: 'Rubik', sans-serif;
@@ -939,6 +920,7 @@ bottom: 500px;
       }
       .pl2{
         position: relative;left: 10px;
+        font-size: 10px;
       }
       .pl3{
           font-family: 'Rubik', sans-serif;
