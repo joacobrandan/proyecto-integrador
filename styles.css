@@ -198,9 +198,15 @@
     text-decoration: none;
     padding: 10px;
 }
+h3.nores{
+    background-color: rgba(255, 0, 0, 0.653);
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 
 .babypaulores{
     border-radius: 30px;
+    padding: 5%;
     width: 300px;
 }
 .track-res{
@@ -209,10 +215,11 @@
     flex-wrap: wrap;
     flex-direction: row; 
     background-color: rgba(255, 255, 255, 0.116);
-    align-items: center;
-    
-    
-    
+    align-items: center;    
+}
+.reproductor{
+    padding: 5%;
+    width: 90%;
 }
 .subtitulos{
     text-decoration: none;
@@ -221,24 +228,31 @@
     font-size: 40px;
    
 }
+.solid{
+    color: rgba(0, 0, 0, 0.896);
+   
+    
+}
 .fondo-li-res{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
    margin-left: 30px;
-    
+    align-items: center;
     justify-content: center;
 }
 .ul-res{
     list-style: none;
 }
 .simbolos{
-    display: flex;
+    
     list-style: none;
     background-color: white;
-    width: 60px;
+    width: 38%;
+    
+    display: flex;
     justify-content: center;
-    border-radius: 40px;
+    border-radius: 100px;
    
     
 }
@@ -664,9 +678,16 @@ bottom: 500px;
           text-decoration: none;
           padding: 10px;
       }
+      h3.nores{
+        background-color: rgba(255, 0, 0, 0.653);
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+   
       
       .babypaulores{
           border-radius: 30px;
+          padding: 5%;
           width: 80%;
           margin-left: 35px;
           margin-top: 15px;
@@ -699,17 +720,19 @@ bottom: 500px;
           margin-left: -4%;
       }
       .-res{
-          
+        margin-top: 10px;
           width: 100%;
+          margin-bottom: -35px;
       }
       .simbolos{
           display: flex;
           list-style: none;
           background-color: white;
-          width: 60px;
           justify-content: center;
-          border-radius: 40px;
-          margin-top: -20px;
+          margin-top: -19px;
+          width: 38%;
+          border-radius: 100px;
+          margin-bottom: 10px;
          
           
       }

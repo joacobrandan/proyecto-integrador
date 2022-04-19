@@ -24,7 +24,7 @@
             <form action="./resultados.html" method="get">
             <div>
              
-                <input type="text" name="buscar"  placeholder="buscar..." required >
+                <input type="text" name="buscar"  placeholder="buscar..." required>
                 <button type="submit" value="enviar"> <i class="fa-solid fa-magnifying-glass"></i> </button>
             </div>
 
@@ -49,6 +49,8 @@
         </nav>
 
     </header>
+
+    <h3 class="titulos nores">No se encontraron resultados para su busqueda</h3>
 
     <h1 class="titulos">|ARTIST|</h1>
     <section class="artist-resultados">
@@ -88,6 +90,7 @@
               
          
         </div>
+
        
     </section>
 
@@ -97,11 +100,12 @@
     
     <section class="track-res">
         
-        <div class="-res">
-            <a href="./detail-track.html" class="img-res" >
-            
-                 <img src="./imgs/canciones/homerun-warner-sq.jpg" alt="homerun" class="babypaulores">
-            
+     
+            <div class="-res">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5jW3rF4URMdK7tO2xjS5EI?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="reproductor"></iframe>
+                
+             
+          
          
         </div>
 
@@ -112,21 +116,19 @@
              <h2 class="subtitulos"> Tal Vez</h2>
              </a>
 
-             <ul class="simbolos">
-                 <li class="space">
-                    <i class="fa-solid fa-play"></i> 
-                 </li>
-                 <li>
+             <div class="simbolos">
+                 
                     <i class="fa-regular fa-heart"></i> 
-                 </li>
-             </ul>
+                 
+                </div>
              
               
          
         </div>
        
     </section>  
-  
+    
+
 
         
     
@@ -134,9 +136,11 @@
         <div class="divgenero">
             <h1 class="titulos">|GENERO|</h1>
             
-            <a href="./geners.html" class="nodeco"><h3 class="subtitulos">Urbano Latino</h3> </a>
+            <a href="./geners.html" class="nodeco"><h3 class="subtitulos solid">Urbano Latino</h3> </a>
 
         </div>
+
+   
   <footer id="bot">
             
         <ul class="contenedorfoot">
