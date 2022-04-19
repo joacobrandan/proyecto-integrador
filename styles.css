@@ -313,27 +313,26 @@
   }
   
   .image{
-    position: relative;left: 480px;
+    
     width: 50%;
     height: 50%;
+    position: relative;left: 370px;
     }
 
 .rock{
     background-color: rgba(0, 0, 0, 0.881);
     color:white;
-    max-width: 20%;
-    text-align: center;
+     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-style: italic;
-    bottom: 600px;
+    
     
 }
 .hiphop{
     background-color:  rgba(0, 0, 0, 0.881);
     color: white;
-    max-width: 20%;
-    text-align: center;
+     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -341,20 +340,14 @@
 .electronica{
     background-color: rgba(0, 0, 0, 0.881) ;
     color: white;
-    max-width: 20%;
-    text-align: center;
+  text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
 font-style: italic;
-bottom: -200px;
+
 
 }
-.nombregenero{
-    margin: 10px auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
+
 .Daddy{
     background-color: #52525241;
     border-radius: 10px;
