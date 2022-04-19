@@ -368,10 +368,10 @@ font-style: italic;
  
 }
 .imgcan1{
-    margin: 5px;
-    padding: 5px;
+    margin: 1px;
+    padding: 4px;
     border-radius: 4px;
-    width: 160px;
+    width: 150px;
     text-align: right;
   
 }
@@ -426,7 +426,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .albump{
-position: relative;left: 1000px;
+position: relative;left: 1100px;
 color: rgb(231, 217, 217);
 bottom: 500px;
 
@@ -733,15 +733,11 @@ bottom: 500px;
       }
       
       
-         
+         /*/Query de playlist/*/
       
-      .titulo1{
-          text-align: center;
-          font-family: 'Rubik', sans-serif;
-          color: white;
-      }
+     
       .imgcan{
-          margin: 5px;
+          margin: 2px;
           padding: 2px;
           border-radius: 4px;
           width: 150px;
@@ -757,27 +753,24 @@ bottom: 500px;
           font-family: 'Rubik', sans-serif;
           color: white;
           text-align: center;
-          
-          
-          
-      }
+          }
       .spotify{
-          background-color: #52525241;
-          border-radius: 10px;
-          box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.116);
-          margin: 10px;
-          display: grid;
-          grid-template-columns: 0.8fr 3.7fr 0.5fr;
-       align-items: center;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
       }
       .t1{
           color: white;
       }
       .abc{
-          grid-template-rows: 1f 1f;
-          font-family: 'Rubik', sans-serif;
-          margin-right: 1em;
-          text-decoration: none;outline: none;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;outline: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 15px;
           
       }
       
