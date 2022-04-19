@@ -465,13 +465,15 @@ bottom: 500px;
     background-color: #efe7e741;
 }
 .pl2{
-  position: relative;left: 10px;
+ width: 700px;
 }
 .pl3{
     font-family: 'Rubik', sans-serif;
     font-style: italic;
     color: white;
+    display: flex;
 }
+
 
 /* telefono */
 
