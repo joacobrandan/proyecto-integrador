@@ -405,12 +405,7 @@ flex-wrap: wrap;
   
 }
 
-.homerunimg{
-  width: 500px;
-    text-align: center;
-    max-height: 600px;
-position: relative;top: 10px;left: 980px;
-}
+
 .talvez{
     color:rgb(195, 97, 67);
     background-color: rgba(201, 199, 199, 0.729);
@@ -457,6 +452,7 @@ bottom: 500px;
 }
 .pl2{
  width: 700px;
+ font-size: 20px;
 }
 .pl3{
     font-family: 'Rubik', sans-serif;
@@ -736,26 +732,20 @@ bottom: 500px;
       
       
          /*/Query de playlist/*/
-      
-     
       .imgcan{
           margin: 2px;
           padding: 2px;
           border-radius: 4px;
-          width: 150px;
+          width: 100px;
           text-align: right;
-      }
-      .iconos{
-          font-size: 75px;
-      }
-      .iconos1{
-          font-size: 65px;
-      }
-      .t2{
-          font-family: 'Rubik', sans-serif;
-          color: white;
-          text-align: center;
-          }
+            }
+        .iconos{
+          font-size: 50px;
+              }
+        .iconos1{
+          font-size: 55px;
+            }
+      
       .spotify{
         margin: 10px;
         display: flex;
@@ -775,7 +765,7 @@ bottom: 500px;
         margin-bottom: 15px;
           
       }
-      
+       /*/Query de genero/*/
       #generos-text {
           font-size: 30px;
           font-family:'Rubik', sans-serif ;
@@ -834,38 +824,38 @@ bottom: 500px;
           margin-left: auto;
           margin-right: auto;
           }
+           /*/Query de Genero Detail/*/
       .Daddy{
-          background-color: #52525241;
-          border-radius: 10px;
-          box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.116);
-          margin: 10px;
-          display: grid;
-          grid-template-columns: 0.8fr 3.7fr 0.5fr;
-       align-items: center;
+         margin: -10px;
+        display: flex;
+        flex-direction: row;
+         align-items: flex-start;
+        
+     
       }
       .imgcan1{
-          margin: 5px;
-          padding: 2px;
-          border-radius: 4px;
-          width: 130px;
-          text-align: right;
-          max-height: 120px;
+        margin: 1px;
+        padding: 4px;
+        border-radius: 4px;
+        width: 30px;
+        text-align: right;
+     
+         
       }
       .abcd{
-          grid-template-rows: 1f 1f;
-          font-family: 'Rubik', sans-serif;
-          margin-right: 1em;
-          text-decoration: none;outline: none;
-          font-size: larger;
-          color: rgba(245, 245, 245, 0.688);
-          font-style: bold;
+        margin: 4px;
+        padding: 4px;
+        border-radius: 2px;
+        width:  50px;
+        text-align: right;
+    
       }
       .r{
           text-align: center;
           font-family: 'Montserrat', sans-serif;
         font-style: italic;
         color: black;
-        font-size: 40px;
+        font-size: 20px;
         text-decoration: underline;
       }
       .rr{
@@ -876,16 +866,11 @@ bottom: 500px;
       .rrr{
           font-family: 'Rubik', sans-serif;
           font-style: bold;
-          font-size: 22px;
+          font-size: 20px;
         
       }
+       /*/Query de detail.track/*/
       
-      .homerunimg{
-        width: 500px;
-          text-align: center;
-          max-height: 600px;
-      position: relative;top: 10px;left: 980px;
-      }
       .talvez{
           color:rgb(195, 97, 67);
           background-color: rgba(201, 199, 199, 0.729);
@@ -903,13 +888,7 @@ bottom: 500px;
       
           font-family: 'Rubik', sans-serif;
       }
-      .agregar{
-          text-decoration: none;
-         font-style: bold;
-          color: black;
-      font-family: 'Rubik', sans-serif;
-      position: relative;left: 1000px;
-      }
+      /*/Query de detail.album*/
       .albump{
       position: relative;left: 1000px;
       color: rgb(231, 217, 217);
@@ -928,17 +907,20 @@ bottom: 500px;
           bottom: 10px;
       }
       .pl{
-          width: 500px;
-          height: 500px;
-          position: relative;left: 500px;
-      }
+          width: 200px;
+          height: 200px;
+          position: relative;left: 200px;
+      } 
+      /*/Query de detail.artist/*/
       .pl1{
           text-align: center;
           font-family: 'Rubik', sans-serif;
           background-color: #efe7e741;
       }
       .pl2{
-        position: relative;left: 10px;
+        position: relative;left: 9x;
+       width: 200px;
+       height: 200px;
       }
       .pl3{
           font-family: 'Rubik', sans-serif;
