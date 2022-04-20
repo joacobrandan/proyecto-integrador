@@ -273,6 +273,7 @@ h3.nores{
     margin: 5px;
     padding: 10px;
     width: 200px;
+    
     text-align: center;
     
 }
@@ -372,6 +373,7 @@ font-style: italic;
     padding: 4px;
     border-radius: 4px;
     width: 150px;
+    height: 120px;
     text-align: right;
 flex-wrap: wrap;
   
