@@ -272,13 +272,25 @@ h3.nores{
 .imgcan{
     margin: 5px;
     padding: 10px;
-    width: 200px;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
     text-align: center;
     
 }
 .iconos{
-    font-size: 75px;
-    text-align: left;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.642);
+    width: 20%;
+    border-radius: 70px;
+}
+.orden-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 60%;
+   
 }
 
 .t2{
@@ -286,22 +298,27 @@ h3.nores{
     color: white;
     text-align: center;
     }
-.spotify{
-    margin: 10px;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-   
-     }
-.abc{
-   text-align: center;
-    font-family: 'Rubik', sans-serif;
-    text-decoration: none;outline: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 15px;
-    }
+    .spotify{
+        margin: 10px;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+       
+         }
+    .abc{
+       text-align: center;
+        font-family: 'Rubik', sans-serif;
+        text-decoration: none;
+        outline: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 0.608);
+        align-items: center;
+        }
 .t1{
     color: white;
     text-align: center;
@@ -372,10 +389,13 @@ font-style: italic;
     padding: 4px;
     border-radius: 4px;
     width: 150px;
+    height: 120px;
     text-align: right;
 flex-wrap: wrap;
   
 }
+  
+
 .abcd{
    font-family: 'Rubik', sans-serif;
    text-decoration: none;outline: none;
@@ -733,39 +753,60 @@ bottom: 500px;
       
       
          /*/Query de playlist/*/
-      .imgcan{
-          margin: 2px;
-          padding: 2px;
-          border-radius: 4px;
-          width: 49px;
-          text-align: right;
-            }
+         .imgcan{
+            margin: 5px;
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+            margin-left: 30px;
+            text-align: center;
+            
+        }
         .iconos{
-          font-size: 50px;
-              }
+            font-size: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.642);
+            width: 20%;
+            border-radius: 70px;
+        }
+        .orden-iconos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+           
+        }
         .iconos1{
           font-size: 55px;
             }
       
-      .spotify{
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
+            .spotify{
+                margin: 10px;
+               display: flex;
+               flex-direction: column;
+               flex-wrap: wrap;
+               justify-content: center;
+                          
+            }
+           .abc{
+                text-align: center;
+                font-family: 'Rubik', sans-serif;
+                text-decoration: none;
+                outline: none;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-bottom: 30px;
+                width: 100%;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.608);
+                
+                           }
       .t1{
           color: white;
       }
-      .abc{
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        text-decoration: none;outline: none;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-bottom: 2px;
-          
-      }
+      
        /*/Query de genero/*/
       #generos-text {
           font-size: 30px;
@@ -824,23 +865,24 @@ bottom: 500px;
           margin-right: auto;
           }
            /*/Query de Genero Detail/*/
-      .Daddy{
-         margin: -10px;
-        display: flex;
-        flex-direction: row;
-         align-items: flex-start;
+           .Daddy{
+            margin: -10px;
+           display: flex;
+           flex-direction: column;
+            align-items: flex-start;
+           
         
-     
-      }
-      .imgcan1{
-        margin: 1px;
-        padding: 4px;
-        border-radius: 4px;
-        width: 30px;
-        text-align: right;
-     
-         
-      }
+         }
+         .genero-detail{
+           display: flex;
+           
+           justify-content: center;
+       }
+         .imgcan1{
+      
+        
+            
+         }
       .abcd{
         margin: 10px;
         padding: 10px;
