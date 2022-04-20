@@ -386,6 +386,7 @@ flex-wrap: wrap;
     font-style: bold;
     align-items: center ;
     flex-wrap: wrap;
+    list-style: none;
 }
 .r{
     text-align: center;
@@ -738,7 +739,7 @@ bottom: 500px;
           margin: 2px;
           padding: 2px;
           border-radius: 4px;
-          width: 100px;
+          width: 49px;
           text-align: right;
             }
         .iconos{
@@ -749,7 +750,7 @@ bottom: 500px;
             }
       
       .spotify{
-        margin: 10px;
+        margin: 5px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -764,7 +765,7 @@ bottom: 500px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-bottom: 15px;
+        margin-bottom: 2px;
           
       }
        /*/Query de genero/*/
@@ -785,7 +786,7 @@ bottom: 500px;
         }
         
         .image{
-          position: relative;left: 480px;
+          position: relative;left: 100px;
           width: 50%;
           height: 50%;
           }
@@ -793,18 +794,16 @@ bottom: 500px;
       .rock{
           background-color: rgba(0, 0, 0, 0.881);
           color:white;
-          max-width: 20%;
+          max-width: 100%;
           text-align: center;
           font-family: 'Rubik', sans-serif;
           font-size: 20px;
-          font-style: italic;
-          bottom: -1000px;
-          vertical-align: middle;
+          
       }
       .hiphop{
           background-color:  rgba(0, 0, 0, 0.881);
           color: white;
-          max-width: 20%;
+          max-width: 100%;
           text-align: center;
           font-family: 'Rubik', sans-serif;
           font-size: 20px;
@@ -813,7 +812,7 @@ bottom: 500px;
       .electronica{
           background-color: rgba(0, 0, 0, 0.881) ;
           color: white;
-          max-width: 20%;
+          max-width: 100%;
           text-align: center;
           font-family: 'Rubik', sans-serif;
           font-size: 20px;
@@ -845,10 +844,10 @@ bottom: 500px;
          
       }
       .abcd{
-        margin: 4px;
-        padding: 4px;
+        margin: 10px;
+        padding: 10px;
         border-radius: 2px;
-        width:  50px;
+        width:  30px;
         text-align: right;
     
       }
