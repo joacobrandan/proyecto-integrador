@@ -272,9 +272,14 @@ h3.nores{
 .imgcan{
     margin: 5px;
     padding: 10px;
+<<<<<<< HEAD
     width: 250px;
     height: 250px;
     margin-left: 30px;
+=======
+    width: 200px;
+    
+>>>>>>> bd25e55daa323a815dbc938af48e649515d08065
     text-align: center;
     
 }
