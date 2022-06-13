@@ -272,20 +272,9 @@ h3.nores{
 .imgcan{
     margin: 5px;
     padding: 10px;
-<<<<<<< HEAD:css/styles.css
-    width: 250px;
-    height: 250px;
-    margin-left: 30px;
-=======
-<<<<<<< HEAD
-    width: 250px;
-    height: 250px;
-    margin-left: 30px;
-=======
     width: 200px;
     
->>>>>>> bd25e55daa323a815dbc938af48e649515d08065
->>>>>>> 6f31e2da36103ac43de5687195950439362cdf2c:styles.css
+
     text-align: center;
     
 }
@@ -308,29 +297,6 @@ h3.nores{
     color: white;
     text-align: center;
     }
-<<<<<<< HEAD:css/styles.css
-.spotify{
-    margin: 10px;
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-   
-     }
-.abc{
-   text-align: center;
-    font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-    outline: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 30px;
-    width: 100%;
-    justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.608);
-    align-items: center;
-    }
-=======
     .spotify{
         margin: 10px;
          display: flex;
@@ -352,7 +318,6 @@ h3.nores{
         background-color: rgba(0, 0, 0, 0.608);
         align-items: center;
         }
->>>>>>> 6f31e2da36103ac43de5687195950439362cdf2c:styles.css
 .t1{
     color: white;
     text-align: center;
@@ -815,34 +780,6 @@ bottom: 500px;
           font-size: 55px;
             }
       
-<<<<<<< HEAD:css/styles.css
-  .spotify{
-     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-               
- }
-.abc{
-     text-align: center;
-     font-family: 'Rubik', sans-serif;
-     text-decoration: none;
-     outline: none;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     margin-bottom: 30px;
-     width: 100%;
-     justify-content: center;
-     background-color: rgba(0, 0, 0, 0.608);
-     
-                }
-      .t1{
-          color: white;
-      }
-     
-=======
             .spotify{
                 margin: 10px;
                display: flex;
@@ -869,7 +806,6 @@ bottom: 500px;
           color: white;
       }
       
->>>>>>> 6f31e2da36103ac43de5687195950439362cdf2c:styles.css
        /*/Query de genero/*/
       #generos-text {
           font-size: 30px;
@@ -928,26 +864,6 @@ bottom: 500px;
           margin-right: auto;
           }
            /*/Query de Genero Detail/*/
-<<<<<<< HEAD:css/styles.css
-      .Daddy{
-         margin: -10px;
-        display: flex;
-        flex-direction: column;
-         align-items: flex-start;
-        
-     
-      }
-      .genero-detail{
-        display: flex;
-        
-        justify-content: center;
-    }
-      .imgcan1{
-   
-     
-         
-      }
-=======
            .Daddy{
             margin: -10px;
            display: flex;
@@ -961,12 +877,7 @@ bottom: 500px;
            
            justify-content: center;
        }
-         .imgcan1{
-      
         
-            
-         }
->>>>>>> 6f31e2da36103ac43de5687195950439362cdf2c:styles.css
       .abcd{
         margin: 10px;
         padding: 10px;
