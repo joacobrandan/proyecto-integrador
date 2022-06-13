@@ -1,4 +1,4 @@
-let query = location.search()
+let query = location.search
 let objetoQuery = new URLSearchParams(query)
 let genreId = objetoQuery.get("q")
 
@@ -10,12 +10,11 @@ fetch(`${proxy}${endpoint}`)
         return data.json()
     })
     .then(function(data) {
-        let article = document.querySelector("article")
+        let article_img = document.querySelector("article img")
+        let article_h1 = document.querySelector("article h1")
 
-        article.innerHTML = `
-            <img class="" src="${data.picture_xl}" alt="">
-            <h1 class="">${data.name}</h1>
-        `
+        article_img.src = data.picture_xl
+        article_h1.innerText = data.name
 
         fetch(`${proxy}${endpoint}/artists`)
             .then(function(data) {
@@ -23,7 +22,7 @@ fetch(`${proxy}${endpoint}`)
             })
             .then(function(data) {
                 
-                let ul = document.querySelector("ul")
+                let ul = document.querySelector("article ul")
                 
                 for (let i = 0; i < data.data.length; i++) {
 
@@ -39,4 +38,3 @@ fetch(`${proxy}${endpoint}`)
             .catch(function(error) {console.log(error)})
     })
     .catch(function(error) {console.log(error)})
-
