@@ -6,9 +6,12 @@ let endpoint = "https://api.deezer.com/track"
 
 let ul = document.querySelector("ul")
 
-if (favoritos.length > 0) {
+if (favoritos.length == 0 || favoritos == null) {
+    alert("No hay canciones en favoritos")
+   
+    } else {
     for (let i = 0; i < favoritos.length; i++) {
-        fetch(`${proxy}${endpoint}${favoritos[i]}`)
+        fetch(proxy+endpoint+favoritos[i])
             .then(function(data) {
                 return data.json()
             })
@@ -21,7 +24,4 @@ if (favoritos.length > 0) {
                 `
             })
             .catch(function(error) {console.log(error)})
-    }
-} else {
-    alert("No hay canciones en favoritos")
 }
