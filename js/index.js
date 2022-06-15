@@ -20,12 +20,12 @@ fetch(proxy)
         
         `<li class="lista"> 
 
-        <a href="./detail-track.html" class="titulocancion"> 
+        <a href="./detail-track.html?id=${info[i].id}" class="titulocancion"> 
           <h3 >${info[i].title} </h3> 
       
           <img src="${info[i].album.cover_big} " alt="fresco" class="imgmusica">
         </a>
-        <a href="./detail-artist.html" class="artista"> ${info[i].artist.name} </a>
+        <a href="./detail-track.html?id=${info[i].id}" class="artista"> ${info[i].artist.name} </a>
                   
       </li> `
             
@@ -59,7 +59,7 @@ fetch(proxy)
     
             
       `<li class="lista"> 
-      <a href="./detail-artist.html"  class="titulocancion"> <h3>${infoA[i].name}</h3> 
+      <a href="./detail-artist.html?id=${infoA[i].id}"  class="titulocancion"> <h3>${infoA[i].name}</h3> 
         <img src="${infoA[i].picture_big}" alt="artista" class="imgmusica">
       </a>
     </li> `
@@ -93,7 +93,7 @@ fetch(proxy)
                 
           `
           <li class="lista"> 
-          <a href="./detail-artist.html"  class="titulocancion"> <h3>${infoAlbum[i].title}</h3> 
+          <a href="./detail-album.htmlid=${infoAlbum[i].id}"  class="titulocancion"> <h3>${infoAlbum[i].title}</h3> 
             <img src="${infoAlbum[i].cover_big}" alt="artista" class="imgmusica">
           </a>
         </li> `

@@ -9,7 +9,7 @@ let ul = document.querySelector("ul")
 if (favoritos.length == 0 || favoritos == null) {
     alert("No hay canciones en favoritos")
    
-    } else {
+    } else 
     for (let i = 0; i < favoritos.length; i++) {
         fetch(proxy+endpoint+favoritos[i])
             .then(function(data) {
