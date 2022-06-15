@@ -13,8 +13,8 @@ fetch(`${proxy}${endpoint}`)
         let article_img = document.querySelector("article img")
         let article_h1 = document.querySelector("article h1")
 
-        article_img.src = data.picture_xl
-        article_h1.innerText = data.name
+        article_img = data.picture_xl
+        article_h1 = data.name
 
         fetch(`${proxy}${endpoint}/artists`)
             .then(function(data) {
@@ -26,9 +26,9 @@ fetch(`${proxy}${endpoint}`)
                 
                 for (let i = 0; i < data.data.length; i++) {
 
-                    ul.innerHTML += `
+                    ul.innerHTML  `
                         <li>
-                            <img class="imgcan1" src="${data.data[i].picture_xl}" alt="">
+                            <img class="imgcan1" "${data.data[i].picture_xl}" alt="">
                             <p class="abcd">${data.data[i].name}</p>
                         </li>
                     `
