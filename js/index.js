@@ -93,7 +93,7 @@ fetch(proxy)
                 
           `
           <li class="lista"> 
-          <a href="./detail-album.htmlid=${infoAlbum[i].id}"  class="titulocancion"> <h3>${infoAlbum[i].title}</h3> 
+          <a href="./detail-album.html?id=${infoAlbum[i].id}"  class="titulocancion"> <h3>${infoAlbum[i].title}</h3> 
             <img src="${infoAlbum[i].cover_big}" alt="artista" class="imgmusica">
           </a>
         </li> `

@@ -1,5 +1,6 @@
 #body {
     background-image: url(/proyectofinal/imgs/canciones/body.jpg);
+    
 
 
 }
@@ -244,6 +245,14 @@ h3.nores {
 }
 
 .track-res {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.116);
+    align-items: center;
+}
+.album-res {
 
     display: flex;
     flex-wrap: wrap;
@@ -798,6 +807,14 @@ h3.nores {
 
 
     }
+    .album-res {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.116);
+        align-items: center;
+    }
 
     .subtitulos {
         text-decoration: none;
@@ -1010,6 +1027,19 @@ h3.nores {
     font-style: bold;
     font-size: 20px;
 
+}
+.five {
+    background-color: rgba(240, 248, 255, 0.503);
+    width: 17%;
+    
+}
+.white{
+    color: rgba(240, 248, 255, 0.675);
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 120px;
+    width: 17%;
+    text-align: center;
+    
 }
 
 /*/Query de detail.track/*/

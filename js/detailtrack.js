@@ -45,3 +45,5 @@ fetch(url )
 .catch(function (error) {
     console.log('el error fue '+ error)
 })
+
+/* FALTA REPRODUCTOR Y PLAYLIST */
