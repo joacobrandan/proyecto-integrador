@@ -2,7 +2,9 @@ let qS= location.search;
 let qSObject= new URLSearchParams(qS);
 
 let idTrack= qSObject.get('id');
- const url=`https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`; 
+ const url=`https://api.deezer.com/track/${idTrack}`; 
+ let proxy= "https://api.allorigins.win/raw?url=";
+ let reproductor= `https://www.deezer.com/us/playlist/1479458365`
 
 
 fetch(url )
@@ -29,10 +31,7 @@ fetch(url )
     <a href="./detail-album.html?id=${info.artist.id}" class="nodeco">
         <h3 class="titulo"> ${info.album.title}</h3>
     </a>
-   <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/5jW3rF4URMdK7tO2xjS5EI?utm_source=generator" width="100%" height="380"
-        frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${info.id}" width="40%" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write">
     </iframe>
     
     <a href="./playlist.html" class="nodeco">
@@ -45,5 +44,7 @@ fetch(url )
 .catch(function (error) {
     console.log('el error fue '+ error)
 })
+
+
 
 /* FALTA REPRODUCTOR Y PLAYLIST */

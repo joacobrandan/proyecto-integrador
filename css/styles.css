@@ -1,5 +1,5 @@
 #body {
-    background-image: url(/proyectofinal/imgs/canciones/body.jpg);
+    background-image: url('../imgs/canciones/body.jpg');
     
 
 
@@ -39,6 +39,7 @@
     margin-left: -50px;
     background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 20px;
+    height: 500px;
     
 }
 
@@ -65,13 +66,14 @@
 
     list-style: none;
     width: 250px;
-    height: 350px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.322);
     margin-left: 50px;
-
+    align-self: center;
     display: flex;
 
     flex-wrap: wrap;
+    
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
@@ -82,8 +84,15 @@
 .artista {
     margin-top: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.808);
+    width: 100%;
+    text-align: center  ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
 }
+
 
 .imgmusica {
 
@@ -100,8 +109,13 @@
 .titulocancion {
     text-align: center;
     font-weight: bolder;
+    margin-top: 18px;
     text-decoration: none;
     color: black;
+}
+.tracktitulo{
+    height: 10%;
+    width: 100%;
 }
 
 .encabezado {
@@ -195,9 +209,10 @@
 
 .artist-resultados {
     display: flex;
-    justify-content: center;
+    
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     margin-top: 40px;
 }
 
@@ -211,9 +226,13 @@
     background-color: rgba(255, 255, 255, 0.178);
     padding: 20px;
     border-radius: 30px;
-    width: 96%;
-    align-self: center;
+    width: 40%;
+    height: 20%;
     margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+
 }
 
 
@@ -240,7 +259,7 @@ h3.nores {
 
 .babypaulores {
     border-radius: 30px;
-    padding: 5%;
+    margin:20px ;
     width: 300px;
 }
 
@@ -251,14 +270,23 @@ h3.nores {
     flex-direction: row;
     background-color: rgba(255, 255, 255, 0.116);
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  
 }
 .album-res {
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
+    
     background-color: rgba(255, 255, 255, 0.116);
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+   
 }
 
 .reproductor {
@@ -270,8 +298,12 @@ h3.nores {
     text-decoration: none;
     text-align: center;
     color: rgba(245, 245, 245, 0.688);
-    font-size: 40px;
-
+    font-size: 20px;
+ 
+    color: rgba(255, 255, 255, 0.778);
+    border-radius: 10px;
+  
+   margin: 15%;
 }
 
 .solid {
@@ -286,11 +318,17 @@ h3.nores {
     flex-direction: column;
     margin-left: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.ul-res {
+.-res {
     list-style: none;
+   display: flex;
+   width: 40%;
+   align-items: center;
+   margin: 15px;
+   background-color: rgba(0, 0, 0, 0.559);
+   
 }
 
 .simbolos {
@@ -617,7 +655,7 @@ h3.nores {
 
         list-style: none;
         width: 80%;
-        height: 350px;
+        height: 500px;
         background-color: rgba(255, 255, 255, 0.322);
         display: flex;
         flex-wrap: wrap;

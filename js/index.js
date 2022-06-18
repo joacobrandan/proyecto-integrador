@@ -1,10 +1,11 @@
 /*CANCIONES*/
 
-let proxy=  "https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
+let proxy=  "https://api.allorigins.win/raw?url=";
+let url="https://api.deezer.com/chart";
 let dataTrack= [];
 let listaTrack= document.querySelector('.contenedorli')
 
-fetch(proxy)
+fetch(url)
     .then(function (response) {
         return response.json();
     })
@@ -21,12 +22,12 @@ fetch(proxy)
         `<li class="lista"> 
 
         <a href="./detail-track.html?id=${info[i].id}" class="titulocancion"> 
-          <h3 >${info[i].title} </h3> 
-      
+          <h3 class="tracktitulo">${info[i].title}</h3>
           <img src="${info[i].album.cover_big} " alt="fresco" class="imgmusica">
         </a>
-        <a href="./detail-track.html?id=${info[i].id}" class="artista"> ${info[i].artist.name} </a>
-                  
+
+        <a href="./detail-artist.html?id=${info[i].artist.id}" class="artista"> ${info[i].artist.name} </a>
+              
       </li> `
             
         }
@@ -40,7 +41,7 @@ fetch(proxy)
     let dataArtist = [];
     let listaArtist= document.querySelector(".contenedorlia")
 
-fetch(proxy)
+fetch(url)
     .then(function (response) {
         return response.json();
     })
@@ -75,7 +76,7 @@ fetch(proxy)
     let dataAlbum = [];
     let listaAlbum= document.querySelector(".contenedorlialbum") 
 
-    fetch(proxy)
+    fetch(url)
         .then(function (response) {
             return response.json();
         })

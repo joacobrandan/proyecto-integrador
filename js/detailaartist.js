@@ -2,8 +2,8 @@ let qS= location.search;
 let qSObject= new URLSearchParams(qS);
 
 let idArtist= qSObject.get('id');
- const url=`https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${idArtist}`; 
- 
+ const url=`https://api.deezer.com/artist/${idArtist}`; 
+ let proxy="https://api.allorigins.win/raw?url="
 
 fetch(url)
 .then(function (response) {
@@ -13,19 +13,21 @@ fetch(url)
     console.log(data);
     let imprimir= document.querySelector('.detailartist');
 
-    
+   
     let info= data;
 
    
     imprimir.innerHTML+= 
     `   <h1 class="pl1"> ${info.name}</h1>
     <div class="pl3">
-        
-      <img class="pl2" src="${info.picture_big}" alt="">
+       
+    <img class="pl2" src="${info.picture_big}" alt="">
     
+  
     </div>
 
     `
+  
      
 })
 .catch(function (error) {
@@ -36,7 +38,7 @@ fetch(url)
 
 
 
-let rutaFive= `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${idArtist}/top?limit=5`
+let rutaFive= `https://api.deezer.com/artist/${idArtist}/albums`;
 
 fetch(rutaFive)
 .then(function (response) {
@@ -47,13 +49,16 @@ fetch(rutaFive)
 .then(function (data) {  
     console.log(data);
     let imprimirTop = document.querySelector('.five');
-  for (let i = 0; i < data.data.length; i++) {
+  for (let i = 0; i < 5; i++) {
     let canciones = data.data[i].title;
     console.log(canciones)
 
     imprimirTop.innerHTML+=` 
     
-    <li>${canciones}</li>
+
+    <li> <a href="./detail-album.html?id=${canciones.id}"  class="titulocancion"> ${canciones} </a></li>
+
+   
     `
     
 

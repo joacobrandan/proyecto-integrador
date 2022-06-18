@@ -17,7 +17,9 @@ if (favoritos.length == 0 || favoritos == null) {
             })
             .then(function(data) {
                 
-                ul.innerHTML += `
+                ul.innerHTML +=
+                
+                `
                     <li>
                         <a href="detail-track.html?q=${data.id}>${data.title_short}</a>
                     </li>

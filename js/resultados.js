@@ -1,7 +1,8 @@
 let qS= location.search;
 let qsObject= new URLSearchParams(qS);
-let busqueda= qsObject.get('buscar')
+let busqueda= qsObject.get('buscar');
 let proxy=`https://api.allorigins.win/raw?url=`
+
 let urlArtist= `https://api.deezer.com/search/artist?q=${busqueda}`
 
 
@@ -9,7 +10,7 @@ let urlArtist= `https://api.deezer.com/search/artist?q=${busqueda}`
 /*ARTISTAS */
 
 
-fetch(proxy+urlArtist)
+fetch(  urlArtist)
     .then(function (params) {
         return params.json();
 
@@ -19,7 +20,7 @@ fetch(proxy+urlArtist)
 
         console.log(data)
         
-        for (let i = 0; i < data.data.length; i++) {
+        for (let i = 0; i < 6; i++) {
             let artista = data.data[i];
             
         
@@ -51,7 +52,7 @@ fetch(proxy+urlArtist)
     let urlAlbum= `https://api.deezer.com/search/album?q=${busqueda}`;
 
 
-    fetch(proxy+urlAlbum)
+    fetch(urlAlbum)
     .then(function (params) {
         return params.json();
     })
@@ -67,23 +68,23 @@ fetch(proxy+urlArtist)
             
             `
             <div class="-res">
+
             <a href="./detail-track.html" class="img-res">
             
                  <img src="${album.cover_big}" alt="homerun" class="babypaulores">
-            
-         </a> 
-        </div>
-
-
-        <div class="fondo-li-res">
-           
-             <a href="./detail-album.html?id=${album.id}" class="nodeco">
+                <a href="./detail-album.html?id=${album.id}" class="nodeco">
              <h2 class="subtitulos"> ${album.title}</h2>
              </a>
           
              
 
+             
+             
+         </a> 
         </div>
+
+
+   
             `
         }
 
@@ -93,7 +94,7 @@ fetch(proxy+urlArtist)
 
 let urlTrack= `https://api.deezer.com/search/track?q=${busqueda}`;
 
-fetch(proxy+ urlTrack)
+fetch(urlTrack)
 
     .then(function (params) {
         return params.json();
@@ -111,21 +112,13 @@ fetch(proxy+ urlTrack)
            
          
             <img src="${tracks.album.cover_big}" alt="homerun" class="babypaulores">
+
+            <a href="./detail-track.html?id=${tracks.id}" class="nodeco">
+            <h2 class="subtitulos"> ${tracks.title}</h2>
      
-             </div>
+           
 
-
-            <div class="fondo-li-res">
-       
-             <a href="./detail-track.html?id=${tracks.id}" class="nodeco">
-             <h2 class="subtitulos"> ${tracks.title}</h2>
-            </a>
-
-            <div class="simbolos">
-             
-                <i class="fa-regular fa-heart"></i> 
-             
-            </div>
+          
          
           
      
@@ -134,9 +127,16 @@ fetch(proxy+ urlTrack)
 
 
             `
+           /*  <div class="simbolos">
+             
+            <i class="fa-regular fa-heart"></i> 
+         
+        </div>*/
 
         }
 
     })
-
+    .catch(function (error) {
+        console.log('el error es '+ error)
+    })
   
