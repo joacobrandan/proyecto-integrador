@@ -1,6 +1,6 @@
 /*CANCIONES*/
 
-let proxy=  "https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
+let proxy=  "https://cors-anywhere.herokuapp.com/";
 let dataTrack= [];
 let listaTrack= document.querySelector('.contenedorli')
 
