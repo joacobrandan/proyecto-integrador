@@ -11,7 +11,7 @@ fetch(proxy+endpoint) // fetchproxy+endpoint
     for (let i = 0; i < data.data.length; i++) {
         ul.innerHTML += `<li class = "generoli">
             <img class= "generoimg" src="${data.data[i].picture_xl}" >
-            <a href="generodetail.html?q=${data.data[i].id}">${data.data[i].name}</a>
+            <a  class = "nombregenero" href="generodetail.html?q=${data.data[i].id}">${data.data[i].name}</a>
         </li>`
     }
 })

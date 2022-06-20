@@ -5,7 +5,7 @@ let idAlbum= qSObject.get('id');
 let url= `https://api.deezer.com/album/${idAlbum}`;
 let proxy= "https://api.allorigins.win/raw?url=";
 
-fetch (url)
+fetch (proxy+url)
     .then(function (params) {
         return params.json();
     })

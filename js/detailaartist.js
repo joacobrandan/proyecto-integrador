@@ -6,7 +6,7 @@ let idArtist= qSObject.get('id');
  let proxy="https://api.allorigins.win/raw?url="
 
 
-fetch(url)
+fetch(proxy+url)
 .then(function (response) {
   return response.json();  
 })

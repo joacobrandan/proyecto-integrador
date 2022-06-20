@@ -21,20 +21,15 @@ if (favoritos.length == 0 || favoritos == null) {
                 
                 `
                 <div class="abc">
-                <img class="imgcan" src="https://images-na.ssl-images-amazon.com/images/I/413MrwhObfL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg" alt="Adan y Eva"> 
+                <img class="imgcan" src= "${data.album.cover_xl}" alt=""> 
                 
              <div>
                   <a href="./detail-track.html"> <h1 class="t1"> ${data.title}</h1> </a>
                    <a href="./detail-track.html">  <h2 class="t1">${data.artist.name}</h2> </a>
              </div>
   
-             <div class="orden-iconos">
-                 <div class="iconos" >
-                   <i class="fa-solid fa-circle-play"></i>   <i class="fa-solid fa-circle-arrow-down"></i>  <i class="fa-solid    fa-heart"></i>
-                 </div> 
-             </div>
-                
-          </div>       
+           
+                     
                 `
             })
             .catch(function(error) {console.log(error)})

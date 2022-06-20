@@ -472,16 +472,7 @@ h3.nores {
 
 }
 
-.imgcan1 {
-    margin: 3px;
-    padding: 4px;
-    border-radius: 4px;
-    width: 150px;
-    height: 120px;
-    text-align: right;
-    flex-wrap: wrap;
 
-}
 
 
 .abcd {
@@ -1049,14 +1040,7 @@ h3.nores {
 
 }
 
-.abcd {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 2px;
-    width: 30px;
-    text-align: right;
 
-}
 
 .r {
     text-align: center;
@@ -1186,4 +1170,38 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 45%;
+}
+.imgcan1 {
+ width: 45%;
+ display: flex;
+ flex-direction: row;
+
+}
+.abcd {
+    margin: 10px;
+    padding: 10px;
+     width: 45%;
+    text-align: center;
+    color: black;
+    font-style: bold;
+
+}
+.nombregenero{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-style: bold ;
+}
+.generodetailli {
+    list-style: none;
+    width: 30%;
+    margin-left: 50px;
+    align-self: center;
+    display: flex;
+ flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+justify-content: space-around;
+
 }

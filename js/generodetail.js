@@ -27,7 +27,7 @@ fetch(`${proxy}${endpoint}`)
                 for (let i = 0; i < data.data.length; i++) {
 
                     ul.innerHTML += `
-                        <li>
+                        <li class = "generodetailli">
                             <img class="imgcan1" src="${data.data[i].picture_xl}" alt="">
                             <p class="abcd">${data.data[i].name}</p>
                         </li>
