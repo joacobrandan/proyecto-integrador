@@ -7,7 +7,7 @@ let idTrack= qSObject.get('id');
  let reproductor= `https://www.deezer.com/us/playlist/1479458365`
 
 
-fetch(url )
+fetch(proxy+url)
 .then(function (response) {
   return response.json();  
 })
@@ -34,12 +34,33 @@ fetch(url )
     <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${info.id}" width="40%" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write">
     </iframe>
     
-    <a href="./playlist.html" class="nodeco">
-            <h2 class="titulo"> Agregar a mi Playlist </h2>
+    
+            <h2 class="titulo" id = "boton" > Agregar a mi Playlist </h2>
        
-        </a>
+        
     `
-
+let favoritos = []
+if (localStorage.getItem("favoritos")) {
+  favoritos = JSON.parse (localStorage.getItem("favoritos"))  
+  }
+  let boton = document.querySelector ("#boton")
+  console.log (boton)
+  if (favoritos.includes(info.id)) {
+   boton.innerText= "Eliminar de mi Playlist" 
+}
+boton.addEventListener("click",function(){
+    console.log ("click")
+    if (favoritos.includes(info.id)) {
+        let i = favoritos.indexOf (info.id)
+        favoritos = favoritos.splice (i,1)
+        boton.innerText = "Agregar a mi Playlist"
+     }
+     else {
+        favoritos.push(info.id)
+        boton.innerText= "Eliminar de mi Playlist" 
+     }
+  localStorage.setItem ("favoritos",JSON.stringify(favoritos))
+})
 })
 .catch(function (error) {
     console.log('el error fue '+ error)
@@ -67,3 +88,4 @@ fetch(url )
   
 
 /* FALTA PLAYLIST */
+ 

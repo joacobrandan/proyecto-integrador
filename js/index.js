@@ -1,11 +1,11 @@
 /*CANCIONES*/
 
 let proxy=  "https://api.allorigins.win/raw?url=";
-let url="https://api.deezer.com/chart";
+let url="https://api.deezer.com/chart/0";
 let dataTrack= [];
 let listaTrack= document.querySelector('.contenedorli')
 
-fetch(url)
+fetch(proxy+url)
     .then(function (response) {
         return response.json();
     })

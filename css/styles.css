@@ -62,24 +62,7 @@
 
 }
 
-.lista {
 
-    list-style: none;
-    width: 250px;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.322);
-    margin-left: 50px;
-    align-self: center;
-    display: flex;
-
-    flex-wrap: wrap;
-    
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-
-
-}
 
 .artista {
     margin-top: 10px;
@@ -684,16 +667,17 @@ h3.nores {
 
         list-style: none;
         width: 80%;
-        height: 500px;
-        background-color: rgba(255, 255, 255, 0.322);
+         background-color: rgba(255, 255, 255, 0.322);
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 15px;
-
+      
 
 
     }
+    
+    
 
     .artista {
         margin-top: 10px;
@@ -1177,4 +1161,29 @@ h3.nores {
     font-family: 'Rubik', sans-serif;
     font-style: italic;
     color: white;
+}
+.generoimg {
+    width: 90%;
+}
+.lista {
+
+    list-style: none;
+    width: 90%;
+     background-color: rgba(255, 255, 255, 0.322);
+    margin-left: 50px;
+    align-self: center;
+    display: flex;
+padding-top: 15px;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+justify-content: space-around;
+
+}
+.generoli{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }

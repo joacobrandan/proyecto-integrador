@@ -9,9 +9,9 @@ fetch(proxy+endpoint) // fetchproxy+endpoint
     console.log(data.data);
     let ul = document.querySelector(".lista")
     for (let i = 0; i < data.data.length; i++) {
-        ul.innerHTML += `<li>
-            <img src="${data.data[i].picture_xl}" >
-            <a href="generodetail.html?q="${data.data[i].id}>${data.data[i].name}</a>
+        ul.innerHTML += `<li class = "generoli">
+            <img class= "generoimg" src="${data.data[i].picture_xl}" >
+            <a href="generodetail.html?q=${data.data[i].id}">${data.data[i].name}</a>
         </li>`
     }
 })
