@@ -27,3 +27,24 @@ if (favoritos.length == 0 || favoritos == null) {
             })
             .catch(function(error) {console.log(error)})
 }
+
+  /* BUSCADOR */
+
+  let buscador = document.querySelector('.search');
+  let form= document.querySelector('.form');
+  let parrafo= document.querySelector('.mensaje')
+
+  form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (buscador.value == '') {
+          parrafo.innerText= 'el campo esta vacio';
+      }
+      else if (buscador.value.length <=3){
+          parrafo.innerText=' escribe mas de 3 caracteres'
+      }
+      else{
+          this.submit();
+      }        
+  })
+
+  

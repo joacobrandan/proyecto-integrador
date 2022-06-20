@@ -45,6 +45,25 @@ fetch(url )
     console.log('el error fue '+ error)
 })
 
+  /* BUSCADOR */
 
+  let buscador = document.querySelector('.search');
+  let form= document.querySelector('.form');
+  let parrafo= document.querySelector('.mensaje')
 
-/* FALTA REPRODUCTOR Y PLAYLIST */
+  form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (buscador.value == '') {
+          parrafo.innerText= 'el campo esta vacio';
+      }
+      else if (buscador.value.length <=3){
+          parrafo.innerText=' escribe mas de 3 caracteres'
+      }
+      else{
+          this.submit();
+      }        
+  })
+
+  
+
+/* FALTA PLAYLIST */

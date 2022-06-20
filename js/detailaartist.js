@@ -5,6 +5,7 @@ let idArtist= qSObject.get('id');
  const url=`https://api.deezer.com/artist/${idArtist}`; 
  let proxy="https://api.allorigins.win/raw?url="
 
+
 fetch(url)
 .then(function (response) {
   return response.json();  
@@ -19,6 +20,7 @@ fetch(url)
    
     imprimir.innerHTML+= 
     `   <h1 class="pl1"> ${info.name}</h1>
+    
     <div class="pl3">
        
     <img class="pl2" src="${info.picture_big}" alt="">
