@@ -2,7 +2,7 @@ let query = location.search
 let objetoQuery = new URLSearchParams(query)
 let genreId = objetoQuery.get("q")
 
-let proxy = " https://cors-anywhere.herokuapp.com/"
+let proxy = "https://api.allorigins.win/raw?url=";
 let endpoint = `https://api.deezer.com/genre/${genreId}`
 
 fetch(`${proxy}${endpoint}`)
