@@ -1155,6 +1155,8 @@ h3.nores {
     font-style: italic;
     color: white;
 }
+
+
 .generoimg {
     width: 90%;
 }
@@ -1178,12 +1180,13 @@ justify-content: space-around;
 .generoli{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 20%;
 }
 .imgcan1 {
  width: 45%;
  display: flex;
  flex-direction: row;
+ flex-wrap: wrap;
 
 }
 .abcd {
@@ -1203,14 +1206,11 @@ justify-content: space-around;
     font-style: bold ;
 }
 .generodetailli {
-    list-style: none;
-    width: 30%;
-    margin-left: 50px;
-    align-self: center;
     display: flex;
- flex-direction: row;
-    align-items: center;
+  flex-direction: row;
+    width: 20%;
     margin-bottom: 15px;
 justify-content: space-around;
+flex-wrap: wrap;
 
 }

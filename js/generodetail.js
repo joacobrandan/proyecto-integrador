@@ -13,7 +13,7 @@ fetch(`${proxy}${endpoint}`)
         let article_img = document.querySelector("article img")
         let article_h1 = document.querySelector("article h1")
 
-        article_img.src = data.picture_xl
+       
         article_h1.innerText = data.name
 
         fetch(`${proxy}${endpoint}/artists`)
@@ -28,7 +28,7 @@ fetch(`${proxy}${endpoint}`)
 
                     ul.innerHTML += `
                         <li class = "generodetailli">
-                            <img class="imgcan1" src="${data.data[i].picture_xl}" alt="">
+                        <img class="imgcan1" src="${data.data[i].picture_xl}" alt="">
                             <p class="abcd">${data.data[i].name}</p>
                         </li>
                     `
