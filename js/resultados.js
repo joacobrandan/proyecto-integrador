@@ -1,3 +1,5 @@
+
+
 let qS= location.search;
 let qsObject= new URLSearchParams(qS);
 let busqueda= qsObject.get('buscar');
@@ -10,7 +12,9 @@ let noResultadosArtist= document.querySelector('.track-res')
 /*ARTISTAS */
 
 
-fetch(  urlArtist)
+
+
+fetch(proxy + urlArtist)
     .then(function (params) {
         return params.json();
 
@@ -50,6 +54,7 @@ fetch(  urlArtist)
 
     
 }
+
     })
     .catch(function (error) {
         console.log('el error es ' + error)
@@ -59,7 +64,7 @@ fetch(  urlArtist)
     /*ALBUMS */
     let urlAlbum= `https://api.deezer.com/search/album?q=${busqueda}`;
 
-    fetch(urlAlbum)
+    fetch(proxy + urlAlbum)
     .then(function (params) {
         return params.json();
     })
@@ -103,7 +108,7 @@ fetch(  urlArtist)
 
 let urlTrack= `https://api.deezer.com/search/track?q=${busqueda}`;
 
-fetch(urlTrack)
+fetch(proxy + urlTrack)
 
     .then(function (params) {
         return params.json();
@@ -171,4 +176,4 @@ fetch(urlTrack)
           }        
       })
 
-      
+   

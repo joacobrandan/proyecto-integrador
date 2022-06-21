@@ -42,7 +42,7 @@ fetch(proxy+url)
 
 let rutaFive= `https://api.deezer.com/artist/${idArtist}/albums`;
 
-fetch(rutaFive)
+fetch(proxy+rutaFive)
 .then(function (response) {
 
   return response.json(); 
@@ -52,13 +52,13 @@ fetch(rutaFive)
     console.log(data);
     let imprimirTop = document.querySelector('.five');
   for (let i = 0; i < 5; i++) {
-    let canciones = data.data[i].title;
-    console.log(canciones)
+    let canciones = data.data[i];
+    
 
     imprimirTop.innerHTML+=` 
     
 
-    <li> <a href="./detail-album.html?id=${canciones.id}"  class="titulocancion"> ${canciones} </a></li>
+    <li> <a href="./detail-album.html?id=${canciones.id}"  class="titulocancion"> ${canciones.title} </a></li>
 
    
     `

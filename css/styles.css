@@ -31,11 +31,17 @@
     justify-content: space-between;
 
 }
-
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #21242d url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center;
+	z-index: 999;
+}
 .contenedorli {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+  
     margin-left: -50px;
     background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 20px;
@@ -46,20 +52,22 @@
 .contenedorlia {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
     margin-left: -50px;
     background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 20px;
+    height: 450px;
 
 }
 .contenedorlialbum {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+   
     margin-left: -50px;
     background-color: rgba(255, 255, 255, 0.062);
     margin-bottom: 20px;
-
+    height: 450px;
+    
 }
 
 
@@ -84,6 +92,7 @@
     border-radius: 200px;
     padding: 0, 5px;
     margin-bottom: 19px;
+    margin-top: 20px;
     border-style: solid;
 
 
@@ -608,7 +617,7 @@ h3.nores {
 
 @media (max-width : 420px) {
     #body {
-        background-image: url(./imgs/canciones/body.jpg);
+        background-image: url('../imgs/canciones/body.jpg');
         background-attachment: fixed;
 
 
@@ -663,7 +672,7 @@ h3.nores {
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 15px;
-      
+       
 
 
     }
@@ -1157,9 +1166,9 @@ h3.nores {
     margin-left: 50px;
     align-self: center;
     display: flex;
-padding-top: 15px;
+
     flex-wrap: wrap;
-    
+    height: 85%;
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
