@@ -7,7 +7,8 @@ let proxy=`https://api.allorigins.win/raw?url=`;
 let urlArtist= `https://api.deezer.com/search/artist?q=${busqueda}`;
 let noResultadosTrack= document.querySelector('.artist-resultados');
 let noResultadosAlbum= document.querySelector('.album-res');
-let noResultadosArtist= document.querySelector('.track-res')
+let noResultadosArtist= document.querySelector('.track-res');
+let loader= document.querySelector('#loader');
 
 /*ARTISTAS */
 
@@ -48,13 +49,14 @@ fetch(proxy + urlArtist)
             <img src="${artista.picture_big}" alt="perfil-paulo" class="imgres">
             </a>
         </div>
-        
         `
-    }
+    }   
+}   
+   
 
-    
-}
-
+    })
+    .then(function () {
+        loader.style.display= "none"
     })
     .catch(function (error) {
         console.log('el error es ' + error)
@@ -103,10 +105,18 @@ fetch(proxy + urlArtist)
     }
 
     })
+    .then(function () {
+        loader.style.display= "none"
+    })
+    
+    .catch(function (error) {
+        console.log('el error fue '+ error);
+    })
 
     /*TRACKS*/
 
 let urlTrack= `https://api.deezer.com/search/track?q=${busqueda}`;
+
 
 fetch(proxy + urlTrack)
 
@@ -151,6 +161,9 @@ fetch(proxy + urlTrack)
    
         }
 
+    })
+    .then(function () {
+        loader.style.display= "none"
     })
     .catch(function (error) {
         console.log('el error es '+ error)

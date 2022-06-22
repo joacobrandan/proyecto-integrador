@@ -1,5 +1,5 @@
-window.addEventListener('load', function (e) {
-    console.log(e);
+window.addEventListener('load', function () {
+    
 
     let qS= location.search;
     let qSObject= new URLSearchParams(qS);
@@ -56,7 +56,7 @@ window.addEventListener('load', function (e) {
             console.log('el error fue ' + error)
         })
 
-    /*tracks*/
+    /*tracks del album*/
 
     let urlTracks= `https://api.deezer.com/album/${idAlbum}/tracks`
 
@@ -68,7 +68,7 @@ window.addEventListener('load', function (e) {
         console.log(data)
         
 
-        for (let i = 0; i < data.length; i++) {  
+        for (let i = 0; i < data.data.length; i++) {  
             let tracksAlbum = data.data[i];
             console.log(tracksAlbum);
             let imprimir= document.querySelector(".toppaulo");
